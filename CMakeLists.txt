@@ -34,8 +34,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(N_bodies_problem_visualization
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        shaders/SimpleColor.frag shaders/SimpleColor.vert
-
+        shaders.qrc
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET N_bodies_problem_visualization APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

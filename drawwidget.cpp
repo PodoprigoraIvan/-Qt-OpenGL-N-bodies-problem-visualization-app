@@ -93,8 +93,8 @@ void DrawWidget::initializeGL() {
     QMatrix4x4 matrix;
     matrix.setToIdentity();
 
-    shaderProgram.addShaderFromSourceFile(QOpenGLShader::Vertex, "./shaders/SimpleColor.vert");
-    shaderProgram.addShaderFromSourceFile(QOpenGLShader::Fragment, "./shaders/SimpleColor.frag");
+    shaderProgram.addShaderFromSourceFile(QOpenGLShader::Vertex, ":/graphics/shaders/SimpleColor.vert");
+    shaderProgram.addShaderFromSourceFile(QOpenGLShader::Fragment, ":/graphics/shaders/SimpleColor.frag");
     shaderProgram.link();
     shaderProgram.bind();
 
